@@ -46,13 +46,24 @@ $client = new Client('client-id', 'client-secret', Endpoint::PROD);
 
 #### Авторизация с помощью `$_ENV`
 
-Библиотека поддерживает авторизация с помощью `$_ENV`, вы можете задать параметры конструктора `client_id`, `client_id` и `endpoint` например в .env файле приложения.
+Библиотека поддерживает авторизация с помощью `$_ENV`, вы можете задать параметры конструктора `client_id`, `client_secret` и `endpoint` например в .env файле приложения.
 
 ```bash
+# .env
 CDEK_API_CLIENT_ID=EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI
 CDEK_API_CLIENT_SECRET=PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG
 CDEK_API_ENDPOINT=dev # dev - тестовая среда, prod - боевая среда
 ```
+
+```php
+// cdek.php
+
+use Cdek\Client;
+
+$client = new Client; // без client_id, client_secret и endpoint
+```
+
+Пример авторизации через окружение можно найти в этом [примере](examples/auth-env.php).
 
 ### Токен
 
