@@ -1,0 +1,24 @@
+{
+    "name": "cdek/api",
+    "description": "Минималистичный HTTP-клиент для работы с API CDEK.",
+    "type": "library",
+    "keywords": [
+        "cdek",
+        "api"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "symfony/cache": "^6.4",
+        "illuminate/collections": "^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cdek\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.4"
+    }
+}
