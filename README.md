@@ -12,7 +12,7 @@
 
 
 ```bash
-composer require cdek/api
+composer require cdek-php/api
 ```
 
 ## Примеры
