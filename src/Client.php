@@ -48,6 +48,11 @@ class Client
         $this->createHttpClient();
     }
 
+    /**
+     * Create HTTP client.
+     *
+     * @return void
+     */
     public function createHttpClient(): void
     {
         $httpClientConfig = [
