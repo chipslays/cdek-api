@@ -69,7 +69,7 @@ $client = new Client; // без client_id, client_secret и endpoint
 
 Токен генерируется при любом запросе к API (они описаны ниже), после чего кэшируется на [указанный в ответе срок](https://api-docs.cdek.ru/29923918.html).
 
-### getToken(): string
+### `getToken(): string`
 
 Возвращает действующий токен.
 
@@ -79,7 +79,7 @@ $token = $client->getToken();
 
 ### Запросы к API
 
-#### api(string $method, string $endpoint, array $parameters = []): Collection
+#### `api(string $method, string $endpoint, array $parameters = []): Collection`
 
 Возвращает объект коллекции ([см. документацию по работе с Laravel коллекцией](https://laravel.com/docs/10.x/collections)).
 
@@ -90,7 +90,7 @@ $client->api('get', 'deliverypoints', [
 ]);
 ```
 
-#### get(string $endpoint, array $parameters = []): Collection
+#### `get(string $endpoint, array $parameters = []): Collection`
 
 Выполнить GET-запрос к API.
 
@@ -103,7 +103,7 @@ $client->get('deliverypoints', [
 ]);
 ```
 
-#### post(string $endpoint, array $parameters = []): Collection
+#### `post(string $endpoint, array $parameters = []): Collection`
 
 Выполнить POST-запрос к API.
 
@@ -113,7 +113,7 @@ $client->get('deliverypoints', [
 $client->post(..., [...]);
 ```
 
-#### patch(string $endpoint, array $parameters = []): Collection
+#### `patch(string $endpoint, array $parameters = []): Collection`
 
 Выполнить PATCH-запрос к API.
 
@@ -123,7 +123,7 @@ $client->post(..., [...]);
 $client->patch(..., [...]);
 ```
 
-#### delete(string $endpoint, array $parameters = []): Collection
+#### `delete(string $endpoint, array $parameters = []): Collection`
 
 Выполнить DELETE-запрос к API.
 
@@ -132,9 +132,6 @@ $client->patch(..., [...]);
 ```php
 $client->delete(..., [...]);
 ```
-
-##
-
 
 ## Лицензия
 
