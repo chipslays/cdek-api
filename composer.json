@@ -1,5 +1,5 @@
 {
-    "name": "cdek/api",
+    "name": "cdek-php/api",
     "description": "Минималистичный HTTP-клиент для работы с API CDEK.",
     "type": "library",
     "keywords": [
